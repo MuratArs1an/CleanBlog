@@ -17,6 +17,17 @@
             <span class="meta">Posted by
               <a href="#">Start Bootstrap</a>
               <%=blog.dateCreated %></span>
+              <div class="col-xl-4 col-lg-5 mt-5">
+                <!-- Share box -->
+                <div class="tm-bg-gray tm-share-box">
+                  <div class="text-center">
+                    <a href="/blogs/edit/<%=blog._id %>" class="btn btn-primary p-0 mb-4"><span>Update Details</span></a>	
+                  </div>	
+                  <div class="text-center">
+                    <a onclick="return confirm('ARE YOU SURE')" href="/blogs/<%= blog._id %>?_method=DELETE" class="btn btn-danger p-0 "><span>Delete Post</span></a>	
+                  </div>								
+                </div>
+              </div>
           </div>
         </div>
       </div>
